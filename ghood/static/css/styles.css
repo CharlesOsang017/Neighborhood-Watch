@@ -1,4 +1,4 @@
-h1{
+/* h1{
     color: brown;
 }
 body {
@@ -45,4 +45,11 @@ body{
     background-size: cover;
 }
 
+ */
 
+ .login{
+     background-image: url('../images/Hood11.jpeg');
+     height: 90vh;
+     width: 100vw;
+     color: white;
+ }
