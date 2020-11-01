@@ -53,3 +53,8 @@ body{
      width: 100vw;
      color: white;
  }
+
+ .signup{
+     background-image: url('../images/neighbor2.jpeg');
+     color: white;
+ }
