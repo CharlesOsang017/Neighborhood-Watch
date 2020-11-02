@@ -26,4 +26,43 @@ class TestProfile(TestCase):
     def tearDown(self):
         Profile.objects.all().delete()
         
+class TestNeigbourhood(TestCase):
+    def setUp(self):
+        self.neighbourhood = Neigbourhood(name = 'Kianda', description = 'My heighbourhood', location='Keiyo',admin ='andy',neighbourhood_logo='logo.png', police_number = 0, healthcenter_number = 0,occupants_count='4' )
+        self.neighbourhood.save()
         
+    def test_instance(self):
+        self.assertTrue(isinstance(self.neighbourhood, Neigbourhood))
+        
+    def test_save_heighbourhood(self):
+        hood = Neigbourhood.objects.all()
+        self.assertTrue(len(hood)>0)
+        
+    def test_delete_neighbourhood(self):
+        hoods = Neigbourhood.objects.all().delete()
+        self.assertTrue(len(hoods)>0)
+        
+        
+class TestBusiness(TestCase):
+    def setUp(self):
+        self.user = User(username = 'Cynthia',email= 'g@gmail.com', password = '123')
+        self.user.save()
+        
+        self.neighbourhood = Neigbourhood(name = 'Kmos', description = 'My neighbourhood', police_number = 0, health_number = 0 )
+        self.hood.save()
+        
+    
+        self.busins = Business(name = 'Kuku base', email= 'kukubase@gmail.com', description = 'chicken base', neighbourhood=self.hood, user=self.user)
+        
+        
+    def test_instance(self):
+        self.assertTrue(isinstance(self.busins, Business))
+        
+    def test_save_hood(self):
+        business = Business.objects.all()
+        self.assertTrue(len(business)>0)
+        
+    def test_delete_hood(self):
+        business = Business.objects.all().delete()
+        self.assertTrue(len(business)>0)
+

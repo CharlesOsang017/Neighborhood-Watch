@@ -25,6 +25,7 @@ class Profile(models.Model):
         instance.profile.save()
 
 
+
 class Neighbourhood(models.Model):
     name = models.CharField(max_length=50)
     location = models.CharField(max_length=60)

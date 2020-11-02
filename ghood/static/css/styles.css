@@ -59,7 +59,11 @@ body{
      color: white;
  }
  .homepage{
-     background-image: url('../images/123.jpeg');
+     background-image: url('../images/Hood11.jpeg');
      height: 90vh;
      color: white;
+ }
+ .background-2 {
+     background-image: url('../images/sas.jpeg');
+     height: 95vh;
  }

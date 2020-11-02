@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
-<div class="container-fluid">
+<div class="container-fluid  background-2">
 
   <div class="row">
     {% for hood in all_hoods %}
@@ -26,7 +26,7 @@
     </div>
     {% endfor %}
   </div>
-    <a href="{% url 'new-hood' %}" class="btn btn-outline bg-light btn-sm mb-2" style="text-align: center"> New Neighbourhood</a>
+    <a href="{% url 'new-hood' %}" class="btn btn-success  btn-sm mb-2" style="text-align: center"> + New Neighbourhood</a>
 </div>
 
 
