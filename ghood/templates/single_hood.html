@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
-
 <div class="container" >
   <div class="row">
     <div class="col-md-12">
@@ -38,10 +37,8 @@
           Business</a>
         <a class="btn btn-sm btn-info mb-4" href="{% url 'post' hood.id %}">New Post</a>
         {% if hood.admin == user.profile %}
-        {% endif %}
-        
+        {% endif %}        
         <h5 class="D-block mx-auto tt">Available Businesses</h5>
-        
         <div class="row">
           {% for busines in business %}
           <div class="col-md-4">
