@@ -26,3 +26,6 @@ The Neighborhood-Watch is an application that enables you to explore your neighb
 * Install the dependencies
 * Run python3 manage.py runserver to open the project in the server.
 * Live link to the project
+
+## Licence
+MIT
