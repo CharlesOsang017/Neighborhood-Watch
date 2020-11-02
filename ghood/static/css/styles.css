@@ -58,3 +58,8 @@ body{
      background-image: url('../images/neighbor2.jpeg');
      color: white;
  }
+ .homepage{
+     background-image: url('../images/N.jpeg');
+     height: 90vh;
+     color: white;
+ }

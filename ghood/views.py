@@ -1,10 +1,10 @@
-from django.shortcuts import redirect,render, get_object_or_404
+from django.shortcuts import *
 from django.http import HttpResponseRedirect
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.models import User
-from .forms import SignUpForm, BusinessForm,UpdateProfileForm, NeighbourHoodForm, PostForm
+from .forms import *
 from django.contrib.auth.decorators import login_required
-from .models import Neighbourhood, Profile, Business, Post 
+from .models import *
 
 
 
@@ -37,6 +37,7 @@ def edit_profile(request, username):
             return redirect('profile', user.username)
     else:
         form = UpdateProfileForm()
+        
     return render(request, 'create_profile.html', {'form': form})
 
 

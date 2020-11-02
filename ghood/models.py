@@ -48,7 +48,7 @@ class Neighbourhood(models.Model):
     @classmethod
     def find_neighborhood(cls, neighborhood_id):
         return cls.objects.filter(id=neighborhood_id)
-
+    
 
 class Business(models.Model):
     name = models.CharField(max_length=120)

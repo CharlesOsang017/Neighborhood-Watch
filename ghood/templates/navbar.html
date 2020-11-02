@@ -1,5 +1,5 @@
 <nav class="mb-1 navbar navbar-expand-lg navbar-gradient" style="background-color:rgb(53, 106, 150)">
-  <a class="navbar-brand" href="{% url 'index' %}">Our Hood</a>
+  <a class="navbar-brand" href="{% url 'index' %}"> 🏡 Our Hood 🏡</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
     aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -12,8 +12,7 @@
     {% if user.is_authenticated %}
     <ul class="navbar-nav ml-auto nav-flex-icons"> 
 
-        <img src="{{ user.userprofile.profile_picture.url }}" width="240px">
-       
+       <img src="{{ user.userprofile.profile_picture.url }}" width="240px">       
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
