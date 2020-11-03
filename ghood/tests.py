@@ -45,10 +45,10 @@ class TestNeigbourhood(TestCase):
         
 class TestBusiness(TestCase):
     def setUp(self):
-        self.user = User(username = 'Cynthia',email= 'g@gmail.com', password = '123')
+        self.user = User(username = 'molly',email= 'g@gmail.com', password = '123')
         self.user.save()
         
-        self.neighbourhood = Neigbourhood(name = 'Kmos', description = 'My neighbourhood', police_number = 0, health_number = 0 )
+        self.neighbourhood = Neigbourhood(name = 'Osango', description = 'My neighbourhood', police_number = 0, health_number = 0 )
         self.hood.save()
         
     
